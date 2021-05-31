@@ -1,3 +1,3 @@
 export interface NotificationService {
-  notify(payload: unknown): Promise<void>;
+  notify(payload: { id: string; fieldName: string }): Promise<void>;
 }
